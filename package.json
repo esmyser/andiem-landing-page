@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/esmyser/andiem-landing-page/issues"
   },
-  "homepage": "https://github.com/esmyser/andiem-landing-page#readme"
+  "homepage": "https://github.com/esmyser/andiem-landing-page#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
