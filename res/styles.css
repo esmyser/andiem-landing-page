@@ -4,7 +4,6 @@
          url('/fonts/andiem_font_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 html {
@@ -21,7 +20,7 @@ body {
   line-height: 1.42857;
   font-size: 17px;
   background-color: rgba(0,0,0,1);
-  color: #FFF;
+  color: #fff;
   word-wrap: normal;
 }
 
@@ -65,7 +64,7 @@ section {
 }
 
 .user-signup__form-group {
-  padding: 0 0 0 5px;
+  padding: 0 40px;
   position: relative;
 }
 
@@ -138,7 +137,7 @@ section {
 }
 
 .m-lg-v {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -190,22 +189,24 @@ h1 {
   border-radius: 0;
   font-size: 14px;
   height: 50px;
+  margin: auto;
+  width: 70%;
 }
 
 .user-signup__submit {
   border-width: 0;
-  border-radius: 0;
+  border-radius: 4px;
   font-size: 14px;
   padding-right: 20px;
   padding-left: 20px;
   height: 50px;
-  background-color: #00a651;
-  color: #FFF;
+  background-color: #d2e5f4;
+  color: black;
 }
 
 .user-signup__submit:hover {
-  background-color: #1cd861;
-  color: #FFF;
+  background-color: #e7fb54;
+  color: black;
 }
 
 @media all and (min-width:481px) {
@@ -219,11 +220,15 @@ h1 {
 }
 
 @media all and (min-width:769px) {
+  span {
+    font-size: 18px;
+  }
+
   p {
     font-size: 22px;
   }
 
   h1 {
-    font-size: 75px;
+    font-size: 60px;
   }
 }
