@@ -1,0 +1,19 @@
+{
+  "name": "andiem-landing-page",
+  "version": "1.0.0",
+  "description": "email signups",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esmyser/andiem-landing-page.git"
+  },
+  "author": "ezra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esmyser/andiem-landing-page/issues"
+  },
+  "homepage": "https://github.com/esmyser/andiem-landing-page#readme"
+}
