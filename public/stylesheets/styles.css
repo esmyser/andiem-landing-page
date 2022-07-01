@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'gtf_good_sans_trialthin';
-    src: url('/fonts/andiem_font_light-webfont.woff2') format('woff2'),
-         url('/fonts/andiem_font_light-webfont.woff') format('woff');
+    src: url('../fonts/andiem_font_light-webfont.woff2') format('woff2'),
+         url('../fonts/andiem_font_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -162,7 +162,7 @@ section {
   top: 0;
   bottom: 0;
   width: 100%;
-  background: url(/res/loading.gif) 50% 45% no-repeat;
+  background: url(../images/loading.gif) 50% 45% no-repeat;
 }
 
 .rel {
@@ -171,7 +171,7 @@ section {
 
 .bg-image {
   /* photo from: https://www.pexels.com/photo/dawn-landscape-mountains-nature-1852/ */
-  background-image: url(/res/background.jpg);
+  background-image: url(../images/shoe.png);
   background-attachment: scroll;
   background-position: 50% 50%;
   background-size: cover;
