@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const http = require('http');
+const enforce = require('express-sslify');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -19,6 +20,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
 app.use('/public', express.static(path.join(__dirname, '/public')));
 app.use('/', indexRouter);
