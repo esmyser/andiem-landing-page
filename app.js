@@ -7,7 +7,6 @@ const http = require('http');
 const enforce = require('express-sslify');
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
 
 const app = express();
 
@@ -20,11 +19,14 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(enforce.HTTPS({ trustProtoHeader: true }))
+
+// enforce ssl in prod
+if (app.get("env") === "production") {
+   app.use(enforce.HTTPS({ trustProtoHeader: true }));
+}
 
 app.use('/public', express.static(path.join(__dirname, '/public')));
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
