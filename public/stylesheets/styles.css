@@ -41,6 +41,10 @@ h1 {
   color: #e7fb54;
 }
 
+p {
+  line-height: 1.75em;
+}
+
 .bg-image {
   position: fixed;
   top: 0;
@@ -59,10 +63,6 @@ h1 {
 .form-horizontal .btn {
   display: block;
   margin: 0 auto;
-}
-
-.user-signup__submit {
-  line-height: .5em;
 }
 
 .user-signup__form {
@@ -107,6 +107,7 @@ h1 {
   .floaty-unfloat-at--xs.floating-signup__wrap {
     position: static;
     display: block;
+    margin-top: 100px;
     top: auto;
     right: auto;
     bottom: auto;
@@ -176,8 +177,7 @@ h1 {
 }
 
 .bg-image {
-  /* photo from: https://www.pexels.com/photo/dawn-landscape-mountains-nature-1852/ */
-  background-image: url(../images/LP2A3777.jpg);
+  background-image: url(../images/LP2A9888.jpg);
   background-attachment: scroll;
   background-position: 50% 50%;
   background-size: cover;
@@ -192,7 +192,7 @@ h1 {
 
 .form-control__input {
   border-width: 0;
-  border-radius: 0;
+  border-radius: 4px;
   font-size: 14px;
   height: 50px;
   margin: auto;
