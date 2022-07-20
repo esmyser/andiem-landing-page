@@ -183,7 +183,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: transparent;
-  opacity: .69;
+  opacity: .4;
 }
 
 h1 {
@@ -213,6 +213,38 @@ h1 {
 .user-signup__submit:hover {
   background-color: #e7fb54;
   color: black;
+}
+
+@media all and (max-width:481px) {
+  body {
+    font-size: 19px;
+  }
+
+  button, .form-control__input {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .user-signup__form-group {
+    padding: 0px;
+  }
+
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .container-fluid {
+    padding: 0px;
+  }
+
+  .user-signup__intro {
+    text-align: left;
+  }
+
+  #logo {
+    text-align: center;
+  }
 }
 
 @media all and (min-width:481px) {
