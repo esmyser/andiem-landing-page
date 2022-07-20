@@ -103,21 +103,6 @@ p {
   transform: translateY(-50%);
 }
 
-@media all and (max-width: 480px) {
-  .floaty-unfloat-at--xs.floating-signup__wrap {
-    position: static;
-    display: block;
-    margin-top: 30px;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    float: none;
-  }
-}
-
 .insert--image {
   display: block;
   position: relative;
@@ -215,7 +200,7 @@ h1 {
   color: black;
 }
 
-@media all and (max-width:481px) {
+@media all and (max-width:480px) {
   body {
     font-size: 19px;
   }
@@ -223,6 +208,23 @@ h1 {
   button, .form-control__input {
     margin: 0px;
     width: 100%;
+  }
+
+  .floaty-unfloat-at--xs.floating-signup__wrap {
+    position: static;
+    display: block;
+    margin-top: 20px;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    float: none;
+  }
+
+  .bg-image {
+    background-image: url(../images/LP2A9414.jpg);
   }
 
   .user-signup__form-group {
