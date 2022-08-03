@@ -51,14 +51,32 @@ p {
   text-align: left;
 }
 
+.diagonal-box {
+  background-image: linear-gradient(45deg, #e7fb54, #e7fb54);
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  transform: skew(-51deg);
+  left: 50%;
+} 
+
 .bg-image {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  content: "";
   z-index: 0;
+  background-image: url(../images/LP2A9888.jpg);
+  background-attachment: scroll;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  opacity: .4;
 }
 
 .form-horizontal .form-group {
@@ -166,16 +184,6 @@ p {
 
 .rel {
   position: relative;
-}
-
-.bg-image {
-  background-image: url(../images/LP2A9888.jpg);
-  background-attachment: scroll;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  opacity: .4;
 }
 
 h1 {
