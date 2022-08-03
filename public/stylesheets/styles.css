@@ -45,6 +45,12 @@ p {
   line-height: 1.75em;
 }
 
+#success {
+  color: #e7fb54;
+  font-size: 12px;
+  text-align: left;
+}
+
 .bg-image {
   position: fixed;
   top: 0;
@@ -63,6 +69,7 @@ p {
 .form-horizontal .btn {
   display: block;
   margin: 0 auto;
+  padding-top: 8px;
 }
 
 .user-signup__form {
@@ -257,18 +264,26 @@ h1 {
   h1 {
     font-size: 60px;
   }
+
+  #success {
+    text-align: center;
+  }
 }
 
 @media all and (min-width:769px) {
   span {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   p {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   h1 {
     font-size: 60px;
+  }
+
+  .hidden-big {
+    display: none;
   }
 }
