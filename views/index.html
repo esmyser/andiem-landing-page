@@ -54,14 +54,15 @@
                   </div>
                 </div>
                 <div class="row">
-                  <form class="form form-horizontal user-signup__form" name="form" action="https://andiemup.us10.list-manage.com/subscribe/post?u=822ad4b5e7570f233e97d7b47&amp;id=7b406fc6c2" method="POST">
+                  <form class="form form-horizontal user-signup__form" id="signup" name="form" action="https://andiemup.us10.list-manage.com/subscribe/post?u=822ad4b5e7570f233e97d7b47&amp;id=7b406fc6c2" method="POST">
                     <div class="mt-table--full">
                       <div class="mt-td--centered-vertical user-signup__col-1">
                         <div class="user-signup__form-group m-lg-v form-group col-sm-12">
-                          <input type="email" name="EMAIL" class="form-control form-control__input user-signup__email" placeholder="Email" aria-required="true" required="required">
+                          <input type="email" name="EMAIL" class="form-control form-control__input user-signup__email" id="email" placeholder="Email" aria-required="true" required="required">
                         </div>
                       </div>
                     </div>
+                    <p id="success" class="hidden">Got it!</p>
                     <div class="mt-td--centered-vertical user-signup__col-2">
                       <div class="user-signup__form-group m-lg-v form-group text-center">
                         <button type="submit" class="btn btn-default submit user-signup__submit"><span>SIGN UP</span></button>
@@ -75,5 +76,41 @@
         </section>
       </div>
     </div>
+    <script>
+      $(document).ready(function(){
+        var submitForm = $('#signup');
+        var successMessage = $('#success');
+
+        $(submitForm).on('submit',function(event){
+            debugger;
+            event.preventDefault();
+
+            var data = $(submitForm).serialize();
+
+            $.ajax({
+              type: 'POST',
+              url: $(submitForm).attr('action'),
+              data: data,
+              dataType:"jsonp"
+            })
+            .done(function(response){
+              $(successMessage).removeClass('hidden');
+              $('#email').val('');
+
+              console.log(response)
+              debugger;
+            })
+            .fail(function(response){
+              $('#email').val('');
+              $(successMessage).removeClass('hidden');
+
+              console.log(response)
+              debugger;
+            });
+
+            return false;
+        });
+      });
+    </script>
   </body>
 </html>
