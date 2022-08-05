@@ -270,6 +270,10 @@ h1 {
     text-align: center;
   }
 
+  .hidden-medium {
+    display: none;
+  }
+
   .diagonal-box {
     width: 123%;
     left: -9%;
