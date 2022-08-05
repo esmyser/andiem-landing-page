@@ -41,7 +41,7 @@ h1 {
   color: #e7fb54;
 }
 
-p {
+p, span {
   line-height: 1.75em;
 }
 
@@ -50,19 +50,6 @@ p {
   font-size: 12px;
   text-align: left;
 }
-
-.diagonal-box {
-  background-image: linear-gradient(45deg, #e7fb54, #333);
-  opacity: 0.2;
-  position: fixed;
-  top: 0;
-  z-index: 0;
-  height: 100%;
-  width: 198%;
-  left: -56%;
-  transform: skew(-39deg);
-} 
-
 
 .bg-image {
   position: fixed;
@@ -80,6 +67,18 @@ p {
   opacity: .4;
 }
 
+.diagonal-box {
+  background-image: linear-gradient(45deg, #e7fb54, #333);
+  opacity: 0.2;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  height: 100%;
+  width: 198%;
+  left: -56%;
+  transform: skew(-39deg);
+} 
+
 .form-horizontal .form-group {
   margin-right: 0;
   margin-left: 0;
@@ -89,6 +88,10 @@ p {
   display: block;
   margin: 0 auto;
   padding-top: 8px;
+}
+
+.intro {
+  text-align: left;
 }
 
 .user-signup__form {
@@ -258,7 +261,7 @@ h1 {
 }
 
 @media all and (min-width:481px) {
-  p {
+  p, span {
     font-size: 14px;
   }
 
@@ -270,35 +273,39 @@ h1 {
     text-align: center;
   }
 
-  .hidden-medium {
-    display: none;
-  }
-
   .diagonal-box {
     width: 123%;
     left: -9%;
   }
+
+  .hidden-medium {
+    display: none;
+  }
+
+  .intro {
+    text-align: center;
+  }
 }
 
 @media all and (min-width:769px) {
-  span {
-    font-size: 16px;
-  }
-
   p {
     font-size: 18px;
+  }
+
+  span {
+    font-size: 16px;
   }
 
   h1 {
     font-size: 60px;
   }
 
-  .hidden-big {
-    display: none;
-  }
-
   .diagonal-box {
     width: 85%;
     left: 9%;
+  }
+
+  .hidden-big {
+    display: none;
   }
 }
