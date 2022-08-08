@@ -28,7 +28,7 @@ body {
 
 section {
   padding-top: 10px;
-  /*padding-bottom: 10px;*/
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -92,10 +92,6 @@ p, span {
   display: block;
   margin: 0 auto;
   padding-top: 11px;
-}
-
-.intro {
-  text-align: left;
 }
 
 .user-signup__form {
@@ -229,6 +225,10 @@ h1 {
   button, .form-control__input {
     margin: 0px;
     width: 100%;
+  }
+
+  span {
+    font-size: 17px;
   }
 
   .floaty-unfloat-at--xs.floating-signup__wrap {
