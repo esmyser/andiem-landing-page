@@ -86,12 +86,12 @@ p, span {
 .form-horizontal .form-group {
   margin-right: 0;
   margin-left: 0;
+  margin-bottom: 10px;
 }
 
 .form-horizontal .btn {
   display: block;
   margin: 0 auto;
-  padding-top: 11px;
 }
 
 .user-signup__form {
@@ -218,7 +218,7 @@ h1 {
 }
 
 @media all and (max-width:480px) {
-  body {
+  body, .btn {
     font-size: 19px;
   }
 
@@ -263,12 +263,8 @@ h1 {
 }
 
 @media all and (min-width:481px) {
-  p, span {
+  p, span, .btn {
     font-size: 14px;
-  }
-
-  h1 {
-    font-size: 60px;
   }
 
   #success {
@@ -290,16 +286,12 @@ h1 {
 }
 
 @media all and (min-width:769px) {
-  p {
+  p, .btn {
     font-size: 18px;
   }
 
   span {
     font-size: 16px;
-  }
-
-  h1 {
-    font-size: 60px;
   }
 
   .diagonal-box {
