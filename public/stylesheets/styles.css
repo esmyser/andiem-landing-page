@@ -67,8 +67,12 @@ p, span {
   opacity: .4;
 }
 
+.btn {
+  font-weight: bold;
+}
+
 .diagonal-box {
-  background-image: linear-gradient(45deg, #e7fb54, #333);
+  background-image: linear-gradient(45deg, #d2e5f4, #333);
   opacity: 0.2;
   position: fixed;
   top: 0;
@@ -87,7 +91,7 @@ p, span {
 .form-horizontal .btn {
   display: block;
   margin: 0 auto;
-  padding-top: 8px;
+  padding-top: 11px;
 }
 
 .intro {
@@ -159,7 +163,6 @@ p, span {
 
 .m-lg-v {
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 .mt-table,.mt-table--full {
@@ -206,7 +209,6 @@ h1 {
 .user-signup__submit {
   border-width: 0;
   border-radius: 4px;
-  font-size: 14px;
   padding-right: 20px;
   padding-left: 20px;
   height: 50px;
