@@ -248,6 +248,10 @@ h1 {
     background-image: url(../images/LP2A9414.jpg);
   }
 
+  .hidden-small {
+    display: none;
+  }
+
   .user-signup__form-group {
     padding: 0px;
   }
