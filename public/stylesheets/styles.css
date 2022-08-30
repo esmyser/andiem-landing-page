@@ -32,6 +32,17 @@ section {
   position: relative;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+}
+
+footer>a, footer>a:visited, footer>a:active, footer>a:hover {
+  text-decoration: none;
+}
+
 a,a:visited,a:active,a:hover {
   color: #FFF;
   text-decoration: underline;
@@ -227,6 +238,10 @@ h1 {
 
   span {
     font-size: 17px;
+  }
+
+  footer img {
+    margin: 10px;
   }
 
   .floaty-unfloat-at--xs.floating-signup__wrap {
